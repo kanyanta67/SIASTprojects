@@ -1,0 +1,224 @@
+\documentclass{ximera}
+%% handout
+%% nohints
+%% space
+%% newpage
+%% numbers
+
+\input{preamble.tex} %% we can turn off input when making a master document
+
+\prerequisites{none}
+\outcomes{ximeraLatex}
+
+\title{Physics SHM problems }
+
+\begin{document}
+\begin{abstract}
+In this activity we see some examples on the use of the environment to create physics questions on SHM.
+\end{abstract}
+\maketitle
+
+\section{Answer these multiple choice questions}
+
+\begin{question}
+A mass on a spring undergoes SHM. When the mass is at its maximum displacement from equilibrium, its instantaneous velocity
+\begin{solution}
+\begin{multiple-choice}
+\choice{is maximum}
+\choice{is less than maximum, but not zero}
+\choice[correct]{is zero}
+\choice{cannot be determined from the information given}
+\end{multiple-choice}
+\begin{hint}
+where is the displacement zero?
+\end{hint}
+\end{solution}
+\end{question}
+
+\begin{question}
+A mass on a spring undergoes SHM. When the mass passes through the equilibrium position, its instantaneous velocity
+\begin{solution}
+\begin{multiple-choice}
+\choice[correct]{is maximum}
+\choice{is less than maximum, but not zero}
+\choice{is zero}
+\choice{cannot be determined from the information given}
+\end{multiple-choice}
+\end{solution}
+\end{question}
+
+\begin{question}
+A mass is attached to a vertical spring and bobs up and down between points $A$ and $B$. Where is the mass located when its kinetic
+energy is a minimum?
+\begin{solution}
+\begin{multiple-choice}
+\choice[correct]{at either $A$ or $B$}
+\choice{midway between $A$ and $B$}
+\choice{one-fourth of the way between $A$ and $B$}
+\choice{none of the above}
+\end{multiple-choice}
+\end{solution}
+\end{question}
+
+\begin{question}
+A mass on a spring undergoes SHM. When the mass is at maximum displacement from equilibrium, its instantaneous acceleration
+\begin{solution}
+\begin{multiple-choice}
+\choice{is zero}
+\choice[correct]{is a maximum}
+\choice{is less than maximum, but not zero}
+\choice{cannot be determined from the information given}
+\end{multiple-choice}
+\end{solution}
+\end{question}
+
+\begin{question}
+A mass is attached to a vertical spring and bobs up and down between points $A$ and $B$. Where is the mass located when its potential
+energy is a maximum?
+\begin{solution}
+\begin{multiple-choice}
+\choice{midway between $A$ and $B$}
+\choice{one-fourth of the way between $A$ and $B$}
+\choice[correct]{at either $A$ or $B$}
+\choice{none of the above}
+\end{multiple-choice}
+\end{solution}
+\end{question}
+
+\begin{question}
+A mass oscillates on the end of a spring, both on Earth and on the Moon. Where is the period the greatest?
+\begin{solution}
+\begin{multiple-choice}
+\choice{Earth}
+\choice{the Moon}
+\choice[correct]{same on both Earth and the Moon}
+\choice{cannot be determined from the information given}
+\end{multiple-choice}
+\end{solution}
+\end{question}
+
+\begin{question}
+When the mass of a simple pendulum is tripled, the time required for one complete vibration
+\begin{solution}
+\begin{multiple-choice}
+\choice{increases by a factor of $3$}
+\choice{decreases to one-third of its original value}
+\choice{decreases to $1/\sqrt{3}$ of its original value}
+\choice[correct]{does not change}
+\end{multiple-choice}
+\end{solution}
+\end{question}
+
+\begin{question}
+ A mass undergoes SHM with amplitude of $4$ cm. The energy is $8.0$ J at this time. The mass is cut in half and
+the system is again set if motion with amplitude $4.0$ cm. What is the energy of the system now?
+\begin{solution}
+\begin{multiple-choice}
+\choice{$2.0$ J}
+\choice{$4.0$ J}
+\choice[correct]{$8.0 J$}
+\choice{$16$ J}
+\end{multiple-choice}
+\end{solution}
+\end{question}
+
+\section*{Short answer questions}
+\begin{question}
+A $2.00$ kg pumpkin oscillates from a vertically hanging light spring once every $0.65$ s. Write down the equation giving the pumpkin's position $y$ ($+$ upward) as a function of time $t$, assuming it started
+by being compressed $18$ cm from the equilibrium position (where $y=0$) and released.
+\begin{solution}
+Since we are compressing the pumpkin to $18$ cm from its equilibrium position, the general equation for SHM $y=A\cos\left(\dfrac{2\pi t}{T}\right)$ gives
+us
+$$
+y=(0.18\;\text{m})\cos\left(\dfrac{2\pi t}{0.65\;\text{s}}\right),
+$$
+for the position function.
+\answer{$y=0.18\cos\left(\dfrac{2\pi t}{0.65}\right)$}
+\end{solution}
+How long will it take to get into the equilibrium position for the first time?
+\begin{solution}
+The time to return back to the equilibrium position is one-quarter of a period.
+
+$$
+t=\dfrac{1}{4}T=\dfrac{1}{4}(0.65\;\text{s})=\boxed{0.16\;\text{s}}
+$$
+
+\answer{$0.16$ s}
+\end{solution}
+What will be the pumpkin's maximum speed?
+\begin{solution}
+Here we have
+
+$$
+v_{\text{max}}=\omega A=\dfrac{2\pi}{T}A=\dfrac{2\pi}{0.65\;\text{s}}(0.18\;\text{m})=\boxed{1.7\;\text{m/s}}
+$$
+\answer{$1.7$ m/s}
+\end{solution}
+What will be its maximum acceleration and where will that first be attained?
+\begin{solution}
+This is given by
+\begin{align*}
+a_{\text{max}}&=\omega^2 A=\left(\dfrac{{2\pi}}{T}\right)^2A\\
+&=\dfrac{4\pi^2}{(0.65\;\text{s})^2}(0.18\;\text{m})\\
+&=\boxed{17\;\text{m/s}^2}.
+\end{align*}
+
+The maximum acceleration is first attained at the point of release of the pumpkin.
+\answer{$17$ m/s$^2$, at $t=0$}
+\end{solution}
+\end{question}
+%%
+\begin{question}
+A $300$ g mass vibrates according to the equation $x=0.38\sin 6.50 t$, where $x$ is in meters and $t$ is in seconds. Determine the amplitude.
+\begin{solution}
+This is $A=x_{\text{max}}=\boxed{0.38\;\text{m}}$
+\answer{$0.38$ m}
+\end{solution}
+the frequency
+\begin{solution}
+We can find this as follows
+$$
+\omega = 2\pi f=6.50\;s^{-1}\rightarrow f=\dfrac{6.50\;s^{-1}}{2\pi}=\boxed{1.03\;\text{Hz}}
+$$
+\answer{$1.03$ Hz}
+\end{solution}
+the period
+\begin{solution}
+Here
+$$
+T=\dfrac{1}{f}=\dfrac{1}{1.03\;\text{Hz}}=\boxed{0.967\;\text{s}}
+$$
+\answer{$0.967$ s}
+\end{solution}
+the total energy
+\begin{solution}
+This is
+\begin{align*}
+E_{\text{total}}&=\dfrac{1}{2}mv^2_{\text{max}}=\dfrac{1}{2}m(\omega A)^2\\
+&=\dfrac{1}{2}(0.300\;\text{kg})\left[(6.50\;s^{-1})(0.38\;\text{m})\right]^2\\
+&=0.9151\;\text{J}\approx\boxed{0.92\;\text{J}}
+\end{align*}
+\answer{$0.92$ J}
+\end{solution}
+The KE and PE when $x$ is $9.0$ cm.
+\begin{solution}
+The potential energy is given by
+\begin{align*}
+E_{\text{potential}}&=\dfrac{1}{2}kx^2=\dfrac{1}{2}m\omega^2 x^2=\dfrac{1}{2}(0.300\;\text{kg})(6.50\;s^{-1})^2(0.090\;\text{m})^2\\
+&=0.0513\;\text{J}\approx \boxed{5.1\times 10^{-2}\;\text{J}}
+\end{align*}
+The kinetic energy is given by
+\begin{align*}
+E_{\text{kinetic}}&=E_{\text{total}}-E_{\text{potential}}=0.9151\;\text{J}-0.0513\;\text{J}\\
+&=0.8638\;\text{J}\approx \boxed{0.86\;\text{J}}.
+\end{align*}
+\answer{$KE=0.86$ J, $PE=0.051$ J}
+\end{solution}
+
+%\begin{solution}
+%\answer{}
+%\end{solution}
+\end{question}
+
+
+\end{document}
